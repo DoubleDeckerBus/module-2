@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+		padding:10px 20px;
+}
+
+body p {
+	font-family: Helvetica, sans-serif;
+	font-size:14px;
+	color:#000;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+
+h1, h2 {
+	font-family: Helvetica, sans-serif;
+}
+
+h1 { font-size:36px;
+text-align:center;
+}
+
+h2 {
+	font-size:26px;
+}
+
+
+.title {
+	width:100%;
+	float:left;
+	}
+
+.title h2 {
+	width:150px;
+	position:relative;
+	float:right;
+	text-align:center;
+	border-top:1px solid #000;
+		border-left:1px solid #000;
+border-bottom:1px solid #000;
+
+}
+
+	.wrap-1, .wrap-2, .wrap-3 {
+		float:left;
+		margin-top:20px;
+	}
+
+.col-1, .col-2, .col-3 {
+	border: 1px solid #000;
+	background:#ededed;
+	margin-bottom:20px;
+}
+
+
+.col-1 p, .col-2 p, .col-3 p {
+	padding: 20px;
+}
+
+.col-1 h2 {
+	background:#E9C46A;
+}
+
+.col-2 h2 {
+	background:#F4A261;
+}
+
+.col-3 h2 {
+	background:#E76F51;
+}
+	
+	
+@media (min-width:992px) {
+	
+	.wrap-1, .wrap-2, .wrap-3 {
+width: 33%;
+}
+
+.row {
+	width:100%;
+}
+
+.col-1, .col-2 {
+	margin-right:20px;
+}
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	
+	.wrap-1, .wrap-2 {
+width: 50%;
+}
+
+.wrap-3 {
+width: 100%%;
+}
+
+.col-1 {
+	margin-right:20px;
+}
+
+}
+
+@media (max-width:767px) {
+	
+	.wrap-1, .wrap-2, .wrap-3 {
+width: 100%;
+}
+
+}
